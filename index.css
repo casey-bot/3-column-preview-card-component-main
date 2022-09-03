@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 4rem;
+}
+
+.container {
+    width: 350px;
+   
+}
+
+div {
+    padding: 45px 60px 55px 50px;
+    width: 100%;
+    height: 450px;
+    text-align: left;
+}
+
+
+h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.6rem;
+    padding-top: 30px;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    padding-top: 30px; 
+}
+
+button {
+    border: solid 2px hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    margin-top: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+}
+
+.sedans > button {
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans > button:hover {
+    background-color:hsl(31, 77%, 52%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs > button {
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs > button:hover {
+    background-color:hsl(184, 100%, 22%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 8px 8px;
+}
+
+.luxury > button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury > button:hover {
+    background-color:hsl(179, 100%, 13%);
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+
+    .container {
+        width: 950px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+    }  
+
+    body {
+        width: 1440px;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    div {
+        height: 510px;
+        padding-right: 55px;
+
+    }
+
+    button {
+        margin-top: 80px;
+    }
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury {
+        border-radius: 0 8px 8px 0;
+    }
+}
